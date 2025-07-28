@@ -1,5 +1,9 @@
 ﻿# Dataset preprocessing
 
+First of all, create a folder named `data` inside the root directory of the repository. Inside it, create two additional folders, one named `original`, and another named `converted`.
+
+Follow the steps below, guranteeing that you adhere to the save directories specified, in order to replicate our experiments with the provided Hydra configuration files in the repository.
+
 ## Single-task experiments
 
 ### CoNLL dataset
