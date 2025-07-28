@@ -1,0 +1,21 @@
+# @package _global_
+
+seed: 42
+task_name: sDisease
+
+# Specify datasets
+datasets:
+  BC5_Dis:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/BC5_splits/BC5_Dis/train.txt
+      dev: data/converted/BC5_splits/BC5_Dis/dev.txt
+    tag_dict:
+      Disease: Disease
+
+# Specfic parameters are overwritten below
+train:
+  batch_size: 8
+  accumulate_grad_batches: 2

@@ -1,0 +1,9 @@
+BC5CDR:
+  relevant_types:
+    - LOC
+    - PER
+    - ORG
+CONLLen:
+  relevant_types:
+    - Disease
+    - Chemical

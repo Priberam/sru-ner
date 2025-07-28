@@ -1,0 +1,4 @@
+CoNLL:
+  train: data/original/CoNLL/eng.train
+  dev: data/original/CoNLL/eng.testa
+  test: data/original/CoNLL/eng.testb

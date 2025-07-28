@@ -1,0 +1,7 @@
+.venv/
+logs/
+data/original
+data/converted
+.transformers_models/
+.vscode/
+**/__pycache__/

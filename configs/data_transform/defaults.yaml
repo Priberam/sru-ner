@@ -1,0 +1,12 @@
+change_out_to_shift: True
+train_with_separate_tags: True
+merge_sents:
+  force_merge: null
+  normalize:
+    use: False
+    mode: global
+  maximize:
+    use: False
+    swap: False
+change_tags: True
+max_tokens: 405

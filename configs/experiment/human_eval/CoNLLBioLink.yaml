@@ -1,0 +1,27 @@
+# @package _global_
+
+seed: 42
+task_name: CoNLLBioLink
+
+# Specify datasets
+datasets:
+  CONLLen:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/CoNLL/train.txt
+      dev: data/converted/CoNLL/dev.txt
+      test: data/converted/CoNLL/test.txt
+    tag_dict:
+      LOC: LOC
+      MISC: MISC
+      ORG: ORG
+      PER: PER
+
+# Specfic parameters are overwritten below
+data_transform:
+  merge_sents:
+    maximize:
+      use: True
+      swap: True

@@ -1,0 +1,35 @@
+# @package _global_
+
+seed: 42
+task_name: GENIA
+
+# Specify datasets
+datasets:
+  GENIA:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/GENIA/train.parser
+      test: data/converted/GENIA/test.parser
+      dev: data/converted/GENIA/dev.parser
+    tag_dict:
+      protein: Protein
+      DNA: DNA
+      cell_type: Cell_Type
+      cell_line: Cell_Line
+      RNA: RNA
+
+# Specfic parameters are overwritten below
+models:
+  pred_model:
+    attention_module:
+      action_space_dim: 10
+      half_context: 240
+      tok_multiplier:
+        train: True
+        value: 10
+train:
+  optimizers:
+    embed_model:
+      lr: 3.0e-05

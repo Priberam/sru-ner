@@ -1,0 +1,9 @@
+BC5CDR:
+  source: local
+  encoding: utf-8
+  mode: simple
+  split_paths:
+    test: data/converted/multi-task/BC5CDR/test.txt
+  tag_dict:
+    Chemical: Chemical
+    Disease: Disease

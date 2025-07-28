@@ -1,0 +1,19 @@
+# @package _global_
+
+seed: 42
+task_name: ST_Linnaeus
+
+# Specify datasets
+datasets:
+  Linnaeus:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/multi-task/Linnaeus/train.txt
+      test: data/converted/multi-task/Linnaeus/test.txt
+      dev: data/converted/multi-task/Linnaeus/dev.txt
+    tag_dict:
+      Species: Species
+
+# Specfic parameters are overwritten below

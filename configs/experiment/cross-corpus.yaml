@@ -1,0 +1,108 @@
+# @package _global_
+
+seed: 42
+task_name: cross-corpus
+
+# Specify datasets
+datasets:
+  flairBioRED:
+    source: local
+    encoding: utf-8
+    mode: simple-char
+    split_paths:
+      train: data/converted/flair/huner_all_biored/huner_all_biored.train
+      test: data/converted/flair/huner_all_biored/huner_all_biored.test
+      dev: data/converted/flair/huner_all_biored/huner_all_biored.dev
+    tag_dict:
+      Gene: Gene
+      Disease: Disease
+      Chemical: Chemical
+      Species: Species
+      CellLine: CellLine
+  flairGNormPlus:
+    source: local
+    encoding: utf-8
+    mode: simple-char
+    split_paths:
+      train: data/converted/flair/huner_gene_gnormplus/huner_gene_gnormplus.train
+      test: data/converted/flair/huner_gene_gnormplus/huner_gene_gnormplus.test
+      dev: data/converted/flair/huner_gene_gnormplus/huner_gene_gnormplus.dev
+    tag_dict:
+      Gene: Gene
+  flairLinneaus:
+    source: local
+    encoding: utf-8
+    mode: simple-char
+    split_paths:
+      train: data/converted/flair/huner_species_linneaus/huner_species_linneaus.train
+      test: data/converted/flair/huner_species_linneaus/huner_species_linneaus.test
+      dev: data/converted/flair/huner_species_linneaus/huner_species_linneaus.dev
+    tag_dict:
+      Species: Species
+  flairNLMchem:
+    source: local
+    encoding: utf-8
+    mode: simple-char
+    split_paths:
+      train: data/converted/flair/huner_chemical_nlm_chem/huner_chemical_nlm_chem.train
+      test: data/converted/flair/huner_chemical_nlm_chem/huner_chemical_nlm_chem.test
+      dev: data/converted/flair/huner_chemical_nlm_chem/huner_chemical_nlm_chem.dev
+    tag_dict:
+      Chemical: Chemical
+  flairNLMgene:
+    source: local
+    encoding: utf-8
+    mode: simple-char
+    split_paths:
+      train: data/converted/flair/huner_gene_nlm_gene/huner_gene_nlm_gene.train
+      test: data/converted/flair/huner_gene_nlm_gene/huner_gene_nlm_gene.test
+      dev: data/converted/flair/huner_gene_nlm_gene/huner_gene_nlm_gene.dev
+    tag_dict:
+      Gene: Gene
+  flairS800:
+    source: local
+    encoding: utf-8
+    mode: simple-char
+    split_paths:
+      train: data/converted/flair/huner_species_s800/huner_species_s800.train
+      test: data/converted/flair/huner_species_s800/huner_species_s800.test
+      dev: data/converted/flair/huner_species_s800/huner_species_s800.dev
+    tag_dict:
+      Species: Species
+  flairSCAIchemical:
+    source: local
+    encoding: utf-8
+    mode: simple-char
+    split_paths:
+      train: data/converted/flair/huner_chemical_scai/huner_chemical_scai.train
+      test: data/converted/flair/huner_chemical_scai/huner_chemical_scai.test
+      dev: data/converted/flair/huner_chemical_scai/huner_chemical_scai.dev
+    tag_dict:
+      Chemical: Chemical
+  flairSCAIdisease:
+    source: local
+    encoding: utf-8
+    mode: simple-char
+    split_paths:
+      train: data/converted/flair/huner_disease_scai/huner_disease_scai.train
+      test: data/converted/flair/huner_disease_scai/huner_disease_scai.test
+      dev: data/converted/flair/huner_disease_scai/huner_disease_scai.dev
+    tag_dict:
+      Disease: Disease
+  flairNCBIdisease:
+    source: local
+    encoding: utf-8
+    mode: simple-char
+    split_paths:
+      train: data/converted/flair/huner_disease_ncbi/huner_disease_ncbi.train
+      test: data/converted/flair/huner_disease_ncbi/huner_disease_ncbi.test
+      dev: data/converted/flair/huner_disease_ncbi/huner_disease_ncbi.dev
+    tag_dict:
+      Disease: Disease
+
+# Specfic parameters are overwritten below
+data_transform:
+  merge_sents:
+    maximize:
+      use: True
+      swap: True

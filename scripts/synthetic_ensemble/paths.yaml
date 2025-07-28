@@ -1,0 +1,6 @@
+BC5_Chem:
+  train: data/original/BC5_splits/train_Chemical.tsv
+  dev: data/original/BC5_splits/dev_Chemical.tsv
+BC5_Dis:
+  train: data/original/BC5_splits/train_Disease.tsv
+  dev: data/original/BC5_splits/dev_Disease.tsv

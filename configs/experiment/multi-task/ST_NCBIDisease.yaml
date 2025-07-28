@@ -1,0 +1,19 @@
+# @package _global_
+
+seed: 42
+task_name: ST_NCBIDisease
+
+# Specify datasets
+datasets:
+  NCBIDisease:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/multi-task/NCBIDisease/train.txt
+      test: data/converted/multi-task/NCBIDisease/test.txt
+      dev: data/converted/multi-task/NCBIDisease/dev.txt
+    tag_dict:
+      Disease: Disease
+
+# Specfic parameters are overwritten below

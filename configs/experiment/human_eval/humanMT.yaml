@@ -1,0 +1,38 @@
+# @package _global_
+
+seed: 42
+task_name: humanMT
+
+# Specify datasets
+datasets:
+  CONLLen:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/CoNLL/train.txt
+      dev: data/converted/CoNLL/dev.txt
+      test: data/converted/CoNLL/test.txt
+    tag_dict:
+      LOC: LOC
+      MISC: MISC
+      ORG: ORG
+      PER: PER
+  BC5CDR:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/multi-task/BC5CDR/train.txt
+      test: data/converted/multi-task/BC5CDR/test.txt
+      dev: data/converted/multi-task/BC5CDR/dev.txt
+    tag_dict:
+      Chemical: Chemical
+      Disease: Disease
+
+# Specfic parameters are overwritten below
+data_transform:
+  merge_sents:
+    maximize:
+      use: True
+      swap: True

@@ -1,0 +1,5 @@
+BC5CDR:
+  relevant_types:
+    - LOC
+    - PER
+    - ORG

@@ -1,0 +1,19 @@
+# @package _global_
+
+seed: 42
+task_name: ST_BC2GM
+
+# Specify datasets
+datasets:
+  BC2GM:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/multi-task/BC2GM/train.txt
+      test: data/converted/multi-task/BC2GM/test.txt
+      dev: data/converted/multi-task/BC2GM/dev.txt
+    tag_dict:
+      GENE: Gene_or_protein
+
+# Specfic parameters are overwritten below

@@ -1,0 +1,29 @@
+MedMentions:
+  file: data/original/cross_corpus_eval/medmentions_ctd_only_mappable.txt
+  entity_types:
+    Chemical: Chemical
+    Disease: Disease
+BioID:
+  file: data/original/cross_corpus_eval/bioid.txt
+  entity_types:
+    protein: null
+    gene: null
+    chemical: null
+    species: Species
+    gene_function: null
+    cellline: null
+    anatomy: null
+    cell: null
+    rna: null
+    assay: null
+tmVar3:
+  file: data/original/cross_corpus_eval/tmvar_v3.txt
+  entity_types:
+    Gene: Gene
+    ProteinMutation: null
+    DNAMutation: null
+    OtherMutation: null
+    SNP: null
+    AcidChange: null
+    DNAAllele: null
+    ProteinAllele: null

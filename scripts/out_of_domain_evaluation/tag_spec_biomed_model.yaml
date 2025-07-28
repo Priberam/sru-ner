@@ -1,0 +1,4 @@
+CONLLen:
+  relevant_types:
+    - Disease
+    - Chemical

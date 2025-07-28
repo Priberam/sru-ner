@@ -1,0 +1,21 @@
+tmVar3:
+  source: local
+  encoding: utf-8
+  mode: simple-char
+  split_paths:
+    test: data/converted/hunflair2_eval/tmVar3.txt
+  tag_dict: null
+BioID:
+  source: local
+  encoding: utf-8
+  mode: simple-char
+  split_paths:
+    test: data/converted/hunflair2_eval/BioID.txt
+  tag_dict: null
+MedMentions:
+  source: local
+  encoding: utf-8
+  mode: simple-char
+  split_paths:
+    test: data/converted/hunflair2_eval/MedMentions.txt
+  tag_dict: null

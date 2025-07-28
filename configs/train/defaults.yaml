@@ -1,0 +1,26 @@
+early_stop: 30
+accumulate_grad_batches: 1
+grad_norm_clip: 1.0
+use_deterministic: False
+num_epochs: 100
+batch_size: 16
+num_sanity_val_steps: 0
+limit_train_batches: 1.0
+limit_val_batches: 1.0
+limit_test_batches: 1.0
+clear_CUDA_cache_after_n_steps: null
+loss: MultiLabel
+checkpoints:
+  most_recent: True
+  metric_based: True
+  save_average_only: True
+optimizers:
+  use_weight_decay_on_bias: True
+  embed_model:
+    lr: 2.0e-05
+    weight_decay: 0.001
+    warm_up_in_epochs: 1
+  pred_model:
+    lr: 3.0e-04
+    weight_decay: 0.001
+    warm_up_in_epochs: 0.5

@@ -1,0 +1,23 @@
+# General config for training
+defaults:
+  - _self_
+  - data_transform: defaults
+  - datasets: null
+  - MLFlowLogger: defaults
+  - models: defaults
+  - train: defaults
+
+  # One should run an experiment by doing
+  # python src/train.py experiment={exp_name}
+  - experiment: null
+
+hydra:
+  run:
+    dir: logs/${task_name}/${run_name} # Specify the folder where everything is saved
+experiment_name: SRUNER
+run_name: ${now:%Y-%m-%d}_${now:%H-%M-%S}
+checkpoint_dir: ${hydra:runtime.output_dir}/checkpoints
+
+# Require specification in experiment config
+seed: null
+task_name: null

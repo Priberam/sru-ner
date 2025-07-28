@@ -1,0 +1,24 @@
+BC2GM:
+  train: data/original/Crichton/BC2GM-IOB/train.tsv
+  dev: data/original/Crichton/BC2GM-IOB/devel.tsv
+  test: data/original/Crichton/BC2GM-IOB/test.tsv
+BC4CHEMD:
+  train: data/original/Crichton/BC4CHEMD/train.tsv
+  dev: data/original/Crichton/BC4CHEMD/devel.tsv
+  test: data/original/Crichton/BC4CHEMD/test.tsv
+BC5CDR:
+  train: data/original/Crichton/BC5CDR-IOB/train.tsv
+  dev: data/original/Crichton/BC5CDR-IOB/devel.tsv
+  test: data/original/Crichton/BC5CDR-IOB/test.tsv
+JNLPBA:
+  train: data/original/Crichton/JNLPBA/train.tsv
+  dev: data/original/Crichton/JNLPBA/devel.tsv
+  test: data/original/Crichton/JNLPBA/test.tsv
+Linnaeus:
+  train: data/original/Crichton/linnaeus-IOB/train.tsv
+  dev: data/original/Crichton/linnaeus-IOB/devel.tsv
+  test: data/original/Crichton/linnaeus-IOB/test.tsv
+NCBIDisease:
+  train: data/original/Crichton/NCBI-disease-IOB/train.tsv
+  dev: data/original/Crichton/NCBI-disease-IOB/devel.tsv
+  test: data/original/Crichton/NCBI-disease-IOB/test.tsv

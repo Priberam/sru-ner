@@ -1,0 +1,19 @@
+# @package _global_
+
+seed: 42
+task_name: ST_BC4CHEMD
+
+# Specify datasets
+datasets:
+  BC4CHEMD:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/multi-task/BC4CHEMD/train.txt
+      test: data/converted/multi-task/BC4CHEMD/test.txt
+      dev: data/converted/multi-task/BC4CHEMD/dev.txt
+    tag_dict:
+      Chemical: Chemical
+
+# Specfic parameters are overwritten below

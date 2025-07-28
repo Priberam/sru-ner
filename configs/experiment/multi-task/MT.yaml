@@ -1,0 +1,74 @@
+# @package _global_
+
+seed: 42
+task_name: MT
+
+# Specify datasets
+datasets:
+  BC2GM:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/multi-task/BC2GM/train.txt
+      test: data/converted/multi-task/BC2GM/test.txt
+      dev: data/converted/multi-task/BC2GM/dev.txt
+    tag_dict:
+      GENE: Gene_or_protein
+  BC4CHEMD:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/multi-task/BC4CHEMD/train.txt
+      test: data/converted/multi-task/BC4CHEMD/test.txt
+      dev: data/converted/multi-task/BC4CHEMD/dev.txt
+    tag_dict:
+      Chemical: Chemical
+  BC5CDR:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/multi-task/BC5CDR/train.txt
+      test: data/converted/multi-task/BC5CDR/test.txt
+      dev: data/converted/multi-task/BC5CDR/dev.txt
+    tag_dict:
+      Chemical: Chemical
+      Disease: Disease
+  JNLPBA:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/multi-task/JNLPBA/train.txt
+      test: data/converted/multi-task/JNLPBA/test.txt
+      dev: data/converted/multi-task/JNLPBA/dev.txt
+    tag_dict:
+      DNA: DNA
+      cell_line: Cell_Line
+      protein: Gene_or_protein
+      cell_type: Cell_Type
+      RNA: RNA
+  Linnaeus:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/multi-task/Linnaeus/train.txt
+      test: data/converted/multi-task/Linnaeus/test.txt
+      dev: data/converted/multi-task/Linnaeus/dev.txt
+    tag_dict:
+      Species: Species
+  NCBIDisease:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/multi-task/NCBIDisease/train.txt
+      test: data/converted/multi-task/NCBIDisease/test.txt
+      dev: data/converted/multi-task/NCBIDisease/dev.txt
+    tag_dict:
+      Disease: Disease
+
+# Specfic parameters are overwritten below

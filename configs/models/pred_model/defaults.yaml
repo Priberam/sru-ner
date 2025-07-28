@@ -1,0 +1,16 @@
+attention_module:
+  action_space_dim: 2
+  dropout_scores: 0
+  dropout_pos_embeds: 0.2
+  dropout_classes: 0.2
+  half_context: 150
+  tok_multiplier:
+    train: False
+    value: 1
+parser_state:
+  dropout: 0.1
+self_training:
+  project_coeff: 1.0
+control:
+  multiplier_numb_actions_inference: 1.5
+  multiplier_numb_actions_training: 2

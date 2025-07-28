@@ -1,0 +1,23 @@
+# @package _global_
+
+seed: 42
+task_name: ST_JNLPBA
+
+# Specify datasets
+datasets:
+  JNLPBA:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/multi-task/JNLPBA/train.txt
+      test: data/converted/multi-task/JNLPBA/test.txt
+      dev: data/converted/multi-task/JNLPBA/dev.txt
+    tag_dict:
+      DNA: DNA
+      cell_line: Cell_Line
+      protein: Gene_or_protein
+      cell_type: Cell_Type
+      RNA: RNA
+
+# Specfic parameters are overwritten below

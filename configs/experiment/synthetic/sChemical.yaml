@@ -1,0 +1,21 @@
+# @package _global_
+
+seed: 42
+task_name: sChemical
+
+# Specify datasets
+datasets:
+  BC5_Chem:
+    source: local
+    encoding: utf-8
+    mode: simple
+    split_paths:
+      train: data/converted/BC5_splits/BC5_Chem/train.txt
+      dev: data/converted/BC5_splits/BC5_Chem/dev.txt
+    tag_dict:
+      Chemical: Chemical
+
+# Specfic parameters are overwritten below
+train:
+  batch_size: 8
+  accumulate_grad_batches: 2
