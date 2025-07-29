@@ -625,7 +625,7 @@ class NERDataModule(L.LightningDataModule):
         """
         super().__init__()
 
-        assert "mode" == 'trainer'
+        assert mode == 'trainer'
 
         # Save arguments to self.hparams
         self.save_hyperparameters(logger=False)
