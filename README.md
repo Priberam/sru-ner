@@ -143,7 +143,7 @@ with `{exp}` replaced by each of the experiment names who find in the folder `co
 ### Cross-corpus evaluation experiment
 First, train a multi-task model on the ensemble of nine datasets by doing:
 
-python src/train.py experiment=cross-corpus
+    python src/train.py experiment=cross-corpus
 
 Then, evaluate that model in the independent test ensemble by doing
 
