@@ -197,6 +197,7 @@ Train the multi-task model by running:
 The predictions of the model can be found in a pickle named `test_results.pkl` inside the parent directory of the checkpoints directory of the model.
 
 **Evaluation of the spans**
+
 The pickle files returned by the above scripts contain the predictions of the models in a Pandas DataFrame, for all entity types.
 The script below filters the frames and outputs a txt file that contains solely the predictions of out-of-domain entity types.
 
