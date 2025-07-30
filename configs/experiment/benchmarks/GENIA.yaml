@@ -21,6 +21,11 @@ datasets:
       RNA: RNA
 
 # Specfic parameters are overwritten below
+data_transform:
+  merge_sents:
+    maximize:
+      use: True
+      swap: True
 models:
   pred_model:
     attention_module:
