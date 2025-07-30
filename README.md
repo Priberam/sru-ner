@@ -3,7 +3,7 @@
 # SRU-NER
 Source code for the paper **Effective Multi-Task Learning for Biomedical Named Entity Recognition** ([arXiv link](https://arxiv.org/abs/2507.18542)), by João Ruano, Gonçalo M. Correia, Leonor Barreiros and Afonso Mendes. Presented at the  [24th BioNLP workshop](https://aclweb.org/aclwiki/BioNLP_Workshop), co-located with **ACL 2025**.
 
-If you wish to use the code, please read the attached  **LICENSE.md** and cite our paper:
+If you wish to use the code, please read the attached  [license](LICENSE.md) and cite our paper:
 
     @inproceedings{ruano-etal-2025-effective,
     title = "Effective Multi-Task Learning for Biomedical Named Entity Recognition",
