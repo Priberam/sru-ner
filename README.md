@@ -92,7 +92,7 @@ Note how datasets are specified. For each dataset that we train with, there shou
 The *simple* mode assumes a pre-tokenization, whereas the *simple-char* mode uses character level indexing for mention specification. The `tag_dict` dictionary is used to rename the entity types in the original datasets. In this case, the model would be trained to predict the entity types `Location, Organization, People` (the `MISC` mentions are removed due to the value `null`).
 Check out the section [Replicating our experiments](#replicating-our-experiments) for more example configs.
 
-If you want to use MLFlow to track experiment metrics, change the default configuration file `configs/MLFlowLogger/defaults.yaml`by setting `use: True` and filling in the `tracking_uri` parameter.
+**Optionally**, if you want to use **MLFlow to track experiment metrics**, change the default configuration file `configs/MLFlowLogger/defaults.yaml`by setting `use: True` and filling in the `tracking_uri` parameter.
 
 **Finally**, run the model as follows. Inside the root folder of the project, do:
 
