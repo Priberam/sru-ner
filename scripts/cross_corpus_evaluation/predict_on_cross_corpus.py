@@ -127,7 +127,7 @@ def main(cfg_path, inference_corpus_path, ckpt_path=None, pickle_save_file=None)
         max_tokens=datamodule.hparams.max_tokens,
         train_with_separate_tags=False,
         merge_sents_mode=None,
-        random_seed=datamodule.hparams.batch_size,
+        random_seed=cfg.seed,
         id_to_tag=None,
         perturb_probs=None,
     )
